@@ -60,6 +60,11 @@
     position: absolute;
     right: 0;
     cursor: pointer;
+
+    transition: transform 0.2s ease;
+  }
+  .add-item button:hover {
+    transform: scale(1.2);
   }
   .add-item-button {
     font-size: 20px;

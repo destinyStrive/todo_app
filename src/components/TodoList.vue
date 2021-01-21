@@ -5,6 +5,7 @@
             :key="item.id"
             :todo-item="item"
             @change-state="item.done = $event.target.checked"
+            @delete-event="$emit('deleteEvent', $event)"
     >
     </todo-list-item>
   </div>
@@ -17,7 +18,7 @@
     components: {TodoListItem},
     props: {
       toDoList: {type: Array}
-    }
+    },
   }
 </script>
 
